@@ -5,9 +5,9 @@ import Typography from "@mui/material/Typography";
 import MuiModal from "@mui/material/Modal";
 
 export type ModalProps = {
-  open: boolean
-  setOpen: (arg: boolean) => void
-}
+  open: boolean;
+  setOpen: (arg: boolean) => void;
+};
 
 const style = {
   position: "absolute",

@@ -4,7 +4,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import "./globals.css";
 
+import { StoreProvider } from "./store-provider";
 import { MuiThemeProvider } from "@/theme/theme-provider";
+
 import Navbar from "@/components/navbar";
 
 const geistSans = Geist({
@@ -28,16 +30,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <MuiThemeProvider>
-          <CssBaseline />
-          <Navbar />
-          {children}
-        </MuiThemeProvider>
-      </body>
-    </html>
+    <StoreProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <MuiThemeProvider>
+            <CssBaseline />
+            <Navbar />
+            {children}
+          </MuiThemeProvider>
+        </body>
+      </html>
+    </StoreProvider>
   );
 }

@@ -17,13 +17,16 @@
     "@mui/x-date-pickers": "^7.23.2",
     "@mui/x-date-pickers-pro": "^7.23.2",
     "@prisma/client": "^6.0.1",
+    "@reduxjs/toolkit": "^2.5.0",
     "dayjs": "^1.11.13",
     "motion": "^11.14.4",
     "next": "15.1.0",
     "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-detect-offline": "^2.4.5",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@types/node": "^20.17.10",

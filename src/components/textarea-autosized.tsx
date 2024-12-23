@@ -4,7 +4,7 @@ import { styled } from "@mui/system";
 import { TextareaAutosizeProps } from "@mui/material";
 
 export default function TextAreaAuto(props: TextareaAutosizeProps) {
-  return <TextareaAutosize {...props}/>;
+  return <TextareaAutosize {...props} />;
 }
 
 const blue = {

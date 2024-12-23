@@ -5,19 +5,21 @@ import IconButton from "@mui/material/IconButton";
 import type { DatePickerProps } from "./date-picker";
 import type { ModalProps } from "./modal";
 
-type  DatePickerModalProps = DatePickerProps & ModalProps
+type DatePickerModalProps = DatePickerProps & ModalProps;
 
-
-const DatePickerModel = ({ open, setOpen, setValue, children }: DatePickerModalProps & {children: ReactNode}) => {
+const DatePickerModel = ({
+  open,
+  setOpen,
+  setValue,
+  children,
+}: DatePickerModalProps & { children: ReactNode }) => {
   const handleOpen = () => setOpen(true);
 
   return (
     <>
-      <IconButton onClick={handleOpen}>
-        {children}
-      </IconButton>
+      <button onClick={handleOpen}>{children}</button>
       <Modal open={open} setOpen={setOpen}>
-        <DatePicker setValue={setValue}/>
+        <DatePicker setValue={setValue} />
       </Modal>
     </>
   );

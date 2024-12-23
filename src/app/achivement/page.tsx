@@ -10,10 +10,10 @@ import Signs from "@/sections/signs";
 const Page = () => {
   return (
     <Container maxWidth={"lg"}>
-      <Header title="Achivement" />
-      <Signs aspect="achivement" />
+      {/* <Header title="Achivement" /> */}
+      {/* <Signs aspect="achivement" /> */}
       <Steps />
-      <Goals />
+      {/* <Goals /> */}
     </Container>
   );
 };

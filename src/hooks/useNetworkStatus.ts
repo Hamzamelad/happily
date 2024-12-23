@@ -9,7 +9,7 @@ const useNetworkStatus = () => {
 
   useEffect(() => {
     updateNetworkStatus();
-  }, [])
+  }, []);
 
   useEffect(() => {
     window.addEventListener("load", updateNetworkStatus);
@@ -17,9 +17,9 @@ const useNetworkStatus = () => {
     window.addEventListener("offline", updateNetworkStatus);
 
     return () => {
-        window.removeEventListener("load", updateNetworkStatus);
-        window.removeEventListener("online", updateNetworkStatus);
-        window.removeEventListener("offline", updateNetworkStatus);
+      window.removeEventListener("load", updateNetworkStatus);
+      window.removeEventListener("online", updateNetworkStatus);
+      window.removeEventListener("offline", updateNetworkStatus);
     };
   }, [navigator.onLine]);
 
